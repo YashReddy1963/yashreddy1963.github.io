@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Personal Website">
+    <meta name="author" content="Yash Munurreddy">
+    <link rel="icon" type="images/logo-icon" href="images/logo.ico">
+    <title>Yash</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./style.js"></script>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0 bg-black">
+    
+    
+<!--This is the top down navigation bar-->
+<nav class="bg-gray-400">
+
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+
+    <!--Logo Name-->
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Yash Munurreddy</span>
+      </a>
+
+      <!--Dropdown button-->
+      <button onclick="toggleNavbar()" type="button" class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-white rounded-lg hover:bg-black" aria-controls="navbar-hamburger" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+
+      <!--Contents in navigation bar-->
+      <div class="hidden w-full" id="navbar-hamburger">
+        <ul class="flex flex-col font-medium mt-4">
+          <li>
+            <a href="#home-section" class="nav-link block py-2 px-3 text-white hover:bg-black" onclick="toggleNavbar()">HOME</a>
+          </li>
+          <li>
+            <a href="#about-section" class="nav-link block py-2 px-3 text-white hover:bg-black" onclick="toggleNavbar()">ABOUT</a>
+          </li>
+          <li>
+            <a href="#project-section" class="nav-link block py-2 px-3 text-white hover:bg-black" onclick="toggleNavbar()">PROJECTS</a>
+          </li>
+          <li>
+            <a href="https://yashreddy.xyz/" class="block py-2 px-3 text-white hover:bg-black" onclick="toggleNavbar()">BLOGS</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/yashreddy1963?igsh=NGl1bWc3YzhhdjNz" class="block py-2 px-3 text-white hover:bg-black" onclick="toggleNavbar()">PHOTOGRAPHY</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!--Home page-->
+  <section id="home-section h-full">
+    <div class="m-9 flex flex-col items-center lg:flex-row lg:space-x-3 lg:justify-center 2xl:mt-32 2xl:mb-52">
+            <img src="images/profile-modified.jpeg" alt="my-picture" class="rounded-full w-80 p-4 lg:w-[50%] 2xl:w-[30%]">
+            <div class="lg:items-center 2xl:space-x-2 2xl:space-y-4 ">
+                <div class="text-white pb-2 text-6xl font-mono font-bold 2xl:text-9xl">Developer</div>
+                <div class="text-white pb-2 text-2xl font-mono font-bold tracking-[.60em] 2xl:text-5xl 2xl:font-thin">Photograher</div>
+                <div class="text-white pb-2 text-xl font-thin tracking-[.85em] 2xl:text-4xl">Video Editor</div>
+            </div>
+    </div>
+    </section>
+  
+  <!--About Page-->
+    <section id="about-section" class="mt-20 bg-gray-400 h-full text-black">
+        <div class="p-10 space-y-5 font-mono lg:p-28 2xl:p-56 2xl:flex 2xl:flex-col 2xl:items-center 2xl:space-y-10">
+            <div class="font-bold text-3xl lg:text-7xl">About Me</div>
+            <div class="font-thin leading-7 lg:text-xl">
+                Halo! I am Yash a Computer Science student. Currently I develope website's and learn front-end stuff. Also I not good enough at backend but I have preety much interest in and like to learn different stuff related to it
+            </div>
+            <div class="font-thin leading-7 lg:text-xl">
+                My hobbies are photography and video editing. I capture pictures, edit them and also try to create some cenimatic reels. In video editing I create some graphically edited shorts and reels, and also edit the videos of my friends.
+            </div>
+        </div>
+    </section>
+
+    <!--Projects Page-->
+    <section id="project-section" class="text-black h-full bg-gray-300">
+        <div class="p-10 font-mono lg:p-28 2xl:p-56">
+
+            <div class="font-bold text-3xl lg:text-7xl">
+                Projects
+            </div>
+
+            <!--Project list-->
+            <div class="relative flex flex-col mt-6 text-gray-950 bg-white shadow-md bg-clip-border rounded-xl">
+                <div class="p-6">
+                  <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                    AcademicEase
+                  </h5>
+                  <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+                    AcademicEase is a system with dual login roles: admin and student. Admins can add, edit, and delete records, requiring a password for authentication. Students, on the other hand, can access and review their own records. 
+                  </p>
+                </div>
+                <div class="p-6 pt-0">
+                  <a href="https://github.com/YashReddy1963/AcademicEase">
+                    <button
+                        class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+                        type="button">
+                        View
+                    </button>
+                 </a>
+                </div>
+            </div>
+
+            <div class="relative flex flex-col mt-6 text-gray-950 bg-white shadow-md bg-clip-border rounded-xl">
+                <div class="p-6">
+                  <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                    My Portfolio Site
+                  </h5>
+                  <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+                    This is the my personal website that I created using HTML, TailwindCSS and plain JS.
+                  </p>
+                </div>
+                <div class="p-6 pt-0">
+                  <a href="https://github.com/YashReddy1963/yashreddy1963.github.io">
+                    <button
+                        class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+                        type="button">
+                        View
+                    </button>
+                 </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="text-white">
+        <div class="p-2 font-mono flex flex-col items-center">
+            <div class="text-xl font-thin mb-1">
+                Lets get connected!
+            </div>
+            <div class="font-thin text-sm">
+                <a href="https://github.com/YashReddy1963" class=" hover:underline">Github</a>
+                <a href="https://www.linkedin.com/in/yash-m-81371624a/" class="hover:underline">LinkedIn</a>
+                <a href="https://t.me/Yashreddy1963" class="hover:underline">Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
