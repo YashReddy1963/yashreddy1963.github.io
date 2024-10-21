@@ -1,6 +1,9 @@
-
+*{
+  margin: 0%;
+  padding: 0%;
+}
 .shadow-box{
-  box-shadow: 15px -15px #55e6a5 ;
+  box-shadow: 15px -15px  #55e6a5;
 }
 
 .App {

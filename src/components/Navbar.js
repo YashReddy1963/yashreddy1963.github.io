@@ -21,11 +21,11 @@ export default function Navbar() {
     return (
         <>
             <nav className="bg-[#141c27] fixed w-full lg:flex lg:flex-col lg:items-center lg:w-full">
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 lg:space-x-12 lg:text-xl 2xl:space-x-72">
+                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 lg:space-x-12 lg:text-xl 2xl:space-x-64">
                     {/* Logo */}
                     <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-                        <img src={mylogo} alt="logo" className=" font-semibold whitespace-nowrap text-white size-10 rounded-sm 2xl:size-12" />
-                        <div className="text-xl text-white font-medium 2xl:text-2xl">Halō</div>
+                        <img src={mylogo} alt="logo" className=" font-semibold whitespace-nowrap text-white size-10 rounded-sm 2xl:size-16" />
+                        <div className="text-xl text-white font-medium 2xl:text-3xl">Halō</div>
                     </a>
 
                     {/* Dropdown button for mobile */}
@@ -49,7 +49,7 @@ export default function Navbar() {
                         } lg:flex lg:items-center lg:w-auto lg:opacity-100 lg:max-h-full`}
                         id="navbar-hamburger"
                     >
-                        <ul className="flex flex-col lg:flex-row lg:space-x-4 font-medium mt-4 lg:mt-0">
+                        <ul className="flex flex-col lg:flex-row lg:space-x-4 2xl:space-x-12 font-medium mt-4 lg:mt-0">
                             <li>
                                 <a href="#home" className="nav-link block py-2 px-3 text-white hover:bg-[#55e6a5] hover:text-black lg:rounded-sm lg:transition-all lg:duration-300 lg:ease-in-out" onClick={() => handleNavClick('#home')}>HOME</a>
                             </li>
